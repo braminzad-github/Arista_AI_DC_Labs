@@ -1,32 +1,49 @@
-# Arista_SpineLeaf_Lab_Docker
-TOPOLOGY: 2x Spine 4x Leaf DC Lab Setup Using Docker
-In this article, you will be able to setup a simple DC spine/leaf DC network, using Arista virtual image, running on Docker. 
-Docker can run in any environment, but in this lab we use x86 hosts. 
+# AI Data Centre Networking Labs
 
-This is a teeeeeest
-# Lab Setup 
-## Recommended resource
-- x86 Arch
-- 2 CPU Cores
-- 32 GB Ram
-- Ubuntu 24.04
+A personal learning repository exploring advanced data centre networking, with a focus on the network foundations for high-bandwidth, lossless AI workloads and their relevance to Oracle AI infrastructure.
 
-## Install Docker
-Install Docker and Containerlab. Containerlab’s install page (containerlab.dev/install) has a one-line script that sets up both.
+## About Me
 
-I used this and it worked: 
-curl -sL https://containerlab.dev/setup | sudo -E bash -s "all"
-bash -c "$(curl -sL https://get.containerlab.dev)"
+I am a Cloud Architect with a network specialty background. I am also a Senior Lecturer and curriculum designer and developer at Swinburne University of Technology.
 
-## Download Arista lab image
-Download the x86 cEOS-lab image from Arista’s Software Download page (a free account is required) and copy it over with scp/winscp/cyberduck to the Ubuntu. 
+I created this repository to document my learning and explore data centre networking through practical experiments. I design, test, and modify these labs for my own learning and personal interest.
 
-I downloaded cEOS-lab-4.36.2F.tar.xz
+This work also helps me develop a deeper understanding of the infrastructure I propose to customers in my full-time role as a Cloud Architect. These are personal learning exercises, with no commercial or customer delivery purpose.
 
-## Import the image to Docker
-NOTE: On Arista Software Download page, threre is a readme file, read it! It has instructions and this is what I did to setup my lab? 
+## Learning Focus
 
-Run unxz on the file, then docker image import cEOS64-lab-<version>.tar ceos:<version>.
->> import the downloaded cEOS-lab.tar.xz image
-docker import cEOS-lab.tar.xz ceosimage:4.36.2F
->> docker images (to confirm)
+The main focus is advanced data centre networking for high-bandwidth, lossless AI workloads. I am interested in understanding how network architecture, configuration, and operational behaviour support demanding AI infrastructure.
+
+The labs begin with the foundations of a spine-leaf data centre network and progress towards more complex designs and experiments. Each lab builds on the knowledge gained in earlier exercises.
+
+## Repository Structure
+
+This repository follows the order of my learning journey. I started by setting up the lab infrastructure, then designed exercises that progress from simple concepts to intermediate configurations and advanced, more challenging scenarios.
+
+```text
+.
+├── README.md          # Repository introduction and learning approach
+├── Lab_setup/         # Infrastructure preparation and lab environment setup
+├── Lab01_VXLAN/       # VXLAN lab
+└── ...                # Additional labs as my learning progresses
+```
+
+Each lab folder contains its own README with the relevant objectives, topology, setup instructions, configurations, verification steps, and learning notes as they are developed.
+
+## Where to Start
+
+1. Begin with [Lab Setup](./Lab_setup/) to prepare the infrastructure and lab environment.
+2. Continue with [Lab 01: VXLAN](./Lab01_VXLAN/).
+3. Work through subsequent labs in numerical order as they are added.
+
+The initial environment uses a two-spine, four-leaf topology with Arista virtual network devices running in Docker on x86 hosts, managed through Containerlab.
+
+## How I Use These Labs
+
+My approach is to build a topology, configure it, verify its behaviour, and then modify it to understand how and why the results change. I record useful commands, observations, troubleshooting steps, and lessons learned along the way.
+
+The repository will evolve as I learn. Earlier labs may be revised as I test different approaches and develop a better understanding of the underlying concepts.
+
+## Scope
+
+These labs are personal experiments and learning notes. They do not represent official guidance from Oracle, Arista, Swinburne University of Technology, or my employer, and they are not production deployment instructions.
