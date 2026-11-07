@@ -32,8 +32,8 @@ Each lab folder contains its own README with the relevant objectives, topology, 
 
 ## Where to Start
 
-1. Begin with [Lab Setup](./Lab_setup/) to prepare the infrastructure and lab environment.
-2. Continue with [Lab 01: VXLAN](./Lab01_VXLAN/).
+1. Begin with 00_Lab_Setup to prepare the infrastructure and lab environment.
+2. Continue with 01_Lab01_VXLAN.
 3. Work through subsequent labs in numerical order as they are added.
 
 The initial environment uses a two-spine, four-leaf topology with Arista virtual network devices running in Docker on x86 hosts, managed through Containerlab.
