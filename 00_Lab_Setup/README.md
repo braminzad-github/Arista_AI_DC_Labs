@@ -385,7 +385,7 @@ exit
 
 The following sample shows host1 with `192.168.100.11/24` on `eth1` and a connected route to `192.168.100.0/24`. The default route through `eth0` belongs to the container management network. Management addresses may differ between deployments.
 
-<img width="652" height="264" alt="image" src="https://github.com/user-attachments/assets/7f5c48bd-6455-4c4b-adbc-079d3f7f1ce1" />
+![Sample host1 output showing eth1 addressing and the Linux routing table before exiting the host shell](images/host1-network-sample.png)
 
 
 Check host2 from Ubuntu as well; expect `192.168.100.12/24` on its `eth1`:
