@@ -323,7 +323,8 @@ sudo docker ps --format 'table {{.Names}}\t{{.Status}}'
 
 The following sample shows the five lab containers running, with the switches using `ceos:4.36.2F`:
 
-![Sample Containerlab output showing one spine, two leaves, and two Linux hosts running](images/lab-deployment-sample.png)
+<img width="652" height="264" alt="image" src="https://github.com/user-attachments/assets/3dbd13f2-6b44-4f7a-9c45-b76d4884d056" />
+
 
 Management IPv4 and IPv6 addresses may differ between deployments. Use the container names below when connecting to devices.
 
