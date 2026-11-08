@@ -385,7 +385,8 @@ exit
 
 The following sample shows host1 with `192.168.100.11/24` on `eth1` and a connected route to `192.168.100.0/24`. The default route through `eth0` belongs to the container management network. Management addresses may differ between deployments.
 
-![Sample host1 output showing eth1 addressing and the Linux routing table before exiting the host shell](images/host1-network-sample.png)
+<img width="652" height="264" alt="image" src="https://github.com/user-attachments/assets/7f5c48bd-6455-4c4b-adbc-079d3f7f1ce1" />
+
 
 Check host2 from Ubuntu as well; expect `192.168.100.12/24` on its `eth1`:
 
@@ -599,7 +600,8 @@ If `setup` already exists, reattach instead of repeating the creation block. See
 
 The screenshot below shows the completed setup in one tmux window: three switch CLIs, two host shells, and an Ubuntu shell. The switches show VLAN 100 (`SETUP_TEST`) active on Ethernet1 and Ethernet2, both hosts show successful ping results with 0% packet loss, and `tmux list-panes` lists all six panes.
 
-![Completed lab in six tmux panes showing spine1, leaf1, leaf2, successful pings from both hosts, and the Ubuntu shell](images/completed-lab-tmux.png)
+<img width="652" height="264" alt="image" src="https://github.com/user-attachments/assets/8b1fc544-b035-4877-b25a-e9c3f2691109" />
+
 
 ## 12 Save and Stop the Lab
 
