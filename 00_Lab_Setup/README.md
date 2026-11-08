@@ -323,8 +323,7 @@ sudo docker ps --format 'table {{.Names}}\t{{.Status}}'
 
 The following sample shows the five lab containers running, with the switches using `ceos:4.36.2F`:
 
-<img width="652" height="264" alt="image" src="https://github.com/user-attachments/assets/3dbd13f2-6b44-4f7a-9c45-b76d4884d056" />
-
+![alt text](image-4.png)
 
 Management IPv4 and IPv6 addresses may differ between deployments. Use the container names below when connecting to devices.
 
@@ -385,9 +384,7 @@ exit
 
 The following sample shows host1 with `192.168.100.11/24` on `eth1` and a connected route to `192.168.100.0/24`. The default route through `eth0` belongs to the container management network. Management addresses may differ between deployments.
 
-<img width="687" height="207" alt="image" src="https://github.com/user-attachments/assets/33f2b0bf-22a0-4fc3-b74c-4f88456f2cdd" />
-
-
+![alt text](image-3.png)
 
 Check host2 from Ubuntu as well; expect `192.168.100.12/24` on its `eth1`:
 
@@ -601,9 +598,7 @@ If `setup` already exists, reattach instead of repeating the creation block. See
 
 The screenshot below shows the completed setup in one tmux window: three switch CLIs, two host shells, and an Ubuntu shell. The switches show VLAN 100 (`SETUP_TEST`) active on Ethernet1 and Ethernet2, both hosts show successful ping results with 0% packet loss, and `tmux list-panes` lists all six panes.
 
-<img width="993" height="991" alt="image" src="https://github.com/user-attachments/assets/2978b450-0099-4439-a9f6-89a26e36a6b4" />
-
-
+![alt text](image.png)
 
 ## 12 Save and Stop the Lab
 
