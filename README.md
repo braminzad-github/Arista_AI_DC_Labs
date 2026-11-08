@@ -23,8 +23,8 @@ This repository follows the order of my learning journey. I started by setting u
 ```text
 .
 ├── README.md          # Repository introduction and learning approach
-├── Lab_setup/         # Infrastructure preparation and lab environment setup
-├── Lab01_VXLAN/       # VXLAN lab
+├── 00_Lab_Setup/         # Infrastructure preparation and lab environment setup
+├── 01_Lab01_VXLAN/       # VXLAN lab
 └── ...                # Additional labs as my learning progresses
 ```
 
